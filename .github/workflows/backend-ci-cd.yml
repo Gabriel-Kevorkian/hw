@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t morroun/backend-app:latest .
+        run: docker build -t gaby138/backend-app:latest .
 
       - name: Push Docker image to DockerHub
-        run: docker push morroun/backend-app:latest
+        run: docker push gaby138/backend-app:latest
